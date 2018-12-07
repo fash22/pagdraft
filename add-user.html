@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#" class="">Home</a></li>
+                <li><a href="#" class="active">Add User</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <main class="grey-card">
+            <header>Add New User Account</header>
+            <main>
+                <form>
+                    <p><strong>Account Info</strong></p>
+                    <div class="row">
+                        <div class="third-row">
+                            <label for="username">Username: </label>
+                            <input type="text" class="whole-row" id="username" name="username"/>
+                        </div>
+                        <div class="third-row">
+                                <label for="username">Password: </label>
+                                <input type="password" class="whole-row" id="password" name="password"/>
+                            </div>
+                        <div class="third-row">
+                            <label for="vusername">Verify Password: </label>
+                            <input type="password" class="whole-row" id="vpassword" name="vpassword"/>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <p><strong>Personal Info</strong></p>
+                    <div class="row">
+                        <div class="third-row">
+                            <label for="fname">First name</label>
+                            <input type="text" class="whole-row" id="fname" name="fname"/>
+                        </div>
+                        <div class="third-row">
+                            <label for="mname">Middle name </label>
+                            <input type="text" class="whole-row" id="mname" name="mname"/>
+                        </div>
+                        <div class="third-row">
+                            <label for="username">Lastname </label>
+                            <input type="text" class="whole-row" id="lname" name="lname"/>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="third-row">
+                            <label for="account">Account Type</label>
+                            <select class="whole-row" id="account" name="account">
+                                <option name="account" value="nurse">Nurse</option>
+                                <option name="account" value="patient">Patient</option>
+                            </select>
+                        </div>
+                        <div class="third-row">
+                            <label for="gender">Gender </label>
+                            <select class="whole-row" id="gender" name="gender">
+                                <option name="gender" value="m">Male</option>
+                                <option name="gender" value="f">Female</option>
+                            </select>
+                        </div>
+                        <div class="third-row">
+                            <label for="age">Lastname </label>
+                            <input type="number" class="whole-row" id="age" name="age" min="1" max="150" maxlength="3"/>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="button-primary quarter-row">Add User</button>
+                    <button type="reset" class="button-secondary quarter-row">Clear Data</button>
+                </form>
+            </main>
+        </main>
+    </div>
+</body>
+</html>
